@@ -56,8 +56,8 @@ class DoubleLinkedList:
         return True
 
 
-my_doubly_linked_list = DoubleLinkedList(1)
-my_doubly_linked_list.append(2)
-my_doubly_linked_list.pop()
-my_doubly_linked_list.prepend(12)
+my_doubly_linked_list = DoubleLinkedList(2)
+my_doubly_linked_list.append(3)
+# my_doubly_linked_list.pop()
+my_doubly_linked_list.prepend(1)
 my_doubly_linked_list.print_list()
