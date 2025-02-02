@@ -98,10 +98,12 @@ class DoubleLinkedList:
             return self.append(value)
 
         new_node = Node(value)
-        before = self.get(index -1)
-        after = before.next
-        new_node.prev = before
+        before = self.get(index - 1)
+        after = self.get(index + 1)
+
         new_node.next = after
+        new_node.prev = before
+
         before.next = new_node
         after.prev = new_node
         
