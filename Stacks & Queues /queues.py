@@ -16,5 +16,16 @@ class Queue:
             print(temp.value)
             temp = temp.next
 
+    def enqueue(self, value):
+        new_node = Node(value)
+        if self.first is None:
+            self.first = new_node
+            self.last = new_node
+        else:
+            self.last.next = new_node
+            self.last = new_node
+        self.length += 1
+
+
 my_queue = Queue(5)
 my_queue.print_queue()
