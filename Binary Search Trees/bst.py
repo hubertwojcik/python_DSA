@@ -32,9 +32,9 @@ class BinarySearchTree:
     def contains(self, value):
         temp = self.root
         while temp is not None:
-            if temp.value < value:
+            if temp.value > value:
                 temp = temp.left
-            elif temp.value > value:
+            elif temp.value < value:
                 temp = temp.right
             else:
                 return True
