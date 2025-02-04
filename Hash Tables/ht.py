@@ -34,6 +34,17 @@ class HastTable:
                     all_keys.append(self.data_map[i][j][0])
         return all_keys
 
+    def item_in_common(list1, list2):
+        my_dict = {}
+        for i in list1:
+            my_dict[i] = True
+        
+        for j in list2:
+            if j in my_dict:
+                return true
+                
+        return False
+
 
 my_hash_table = HastTable()
 my_hash_table.set_item("bolts",1400)
